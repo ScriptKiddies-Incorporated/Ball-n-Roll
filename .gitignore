@@ -2,17 +2,6 @@
 # Unity folders and files
 ###
 [Aa]ssets/AssetStoreTools*
-[Aa]ssets/Ball 'n' Roll icon.png.meta
-[Aa]ssets/Tutorial_Info/Icons.meta
-Logs/Packages-Update.log
-Packages/manifest.json
-ProjectSettings/EditorSettings.asset
-ProjectSettings/XRSettings.asset
-ProjectSettings/ProjectSettings.asset
-ProjectSettings/ProjectVersion.txt
-ProjectSettings/ProjectVersion.txt
-Assets/Obstacle.prefab
-Assets/Tutorial_Info/Icons.meta
 [Bb]uild/
 [Ll]ibrary/
 [Ll]ocal[Cc]ache/
@@ -36,15 +25,15 @@ sysinfo.txt
 *.unityproj
 *.user
 *.userprefs
-.pidb
+*.pidb
 .DS_Store
 
 ###
 # OS generated
 ###
 .DS_Store
-.DSStore?
-.
+.DS_Store?
+._*
 .Spotlight-V100
 .Trashes
 Icon?
