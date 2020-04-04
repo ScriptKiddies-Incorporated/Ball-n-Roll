@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1526980366}
-  m_IndirectSpecularColor: {r: 0.04338698, g: 0.044547085, b: 0.059290156, a: 1}
+  m_IndirectSpecularColor: {r: 0.043393146, g: 0.044553317, b: 0.059299722, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2376,12 +2376,22 @@ PrefabInstance:
     - target: {fileID: 4824839741237781371, guid: 021edd1f0b6a6594e995d1642794c635,
         type: 3}
       propertyPath: sidewaysForce
-      value: 800
+      value: 1200
       objectReference: {fileID: 0}
     - target: {fileID: 4824839741237781371, guid: 021edd1f0b6a6594e995d1642794c635,
         type: 3}
       propertyPath: forwardForce
       value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824839741237781369, guid: 021edd1f0b6a6594e995d1642794c635,
+        type: 3}
+      propertyPath: m_AngularDrag
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4824839741237781369, guid: 021edd1f0b6a6594e995d1642794c635,
+        type: 3}
+      propertyPath: m_Drag
+      value: 0.05
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 021edd1f0b6a6594e995d1642794c635, type: 3}
@@ -2463,7 +2473,7 @@ Rigidbody:
   m_GameObject: {fileID: 2122226302}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0
+  m_Drag: 0.05
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -2484,7 +2494,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ball: {fileID: 2122226305}
-  sidewaysForce: 800
+  sidewaysForce: 1200
   forwardForce: 400
 --- !u!135 &2122226307
 SphereCollider:
