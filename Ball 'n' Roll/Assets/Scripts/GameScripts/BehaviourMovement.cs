@@ -30,7 +30,7 @@ public class BehaviourMovement : MonoBehaviour
             }
 
 
-        if (Ball.position.y < -3f)
+        if (Ball.position.y < -25f)
         {
             print("GAME OVER!!!");
             ObstacleSpawnerScript.timeController = false;
