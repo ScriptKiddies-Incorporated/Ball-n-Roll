@@ -8,7 +8,10 @@ public class ButtonScriptBones : MonoBehaviour
 
     public void ButtonscriptBones()
     {
-       ButtonScriptHexagonCarbon.skinChoice = "Bones";
+        ScoreText.objcount = 0;
+        ScoreText.cordChacker = 0;
+        ScoreText.timeController2 = false;
+        ButtonScriptHexagonCarbon.skinChoice = "Bones";
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
