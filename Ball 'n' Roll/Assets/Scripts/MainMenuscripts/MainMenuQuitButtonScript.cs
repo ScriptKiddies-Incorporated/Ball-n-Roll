@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class YesButtonScript : MonoBehaviour
+public class MainMenuQuitButtonScript : MonoBehaviour
 {
-    public void OnPressYesButton()
+   public void MainMenuQuitFunction()
     {
         Application.Quit();
     }
