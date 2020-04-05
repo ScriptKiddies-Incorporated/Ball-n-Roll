@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class YesButtonScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    void OnPressYesButton()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Application.Quit();
     }
 }
