@@ -2212,7 +2212,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c20c0285fe1f9e341982c70bb0d6aa96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Finalscore: {fileID: 2023220393}
+  finalScore: {fileID: 2023220393}
 --- !u!1001 &2077474604526042857
 PrefabInstance:
   m_ObjectHideFlags: 0

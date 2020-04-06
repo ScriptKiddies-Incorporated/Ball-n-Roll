@@ -1604,8 +1604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BallPlayerPos: {fileID: 2122226301}
-  scoretext: {fileID: 1515752538}
-  accdivider: 2
+  scoreText: {fileID: 1515752538}
 --- !u!114 &1515752538
 MonoBehaviour:
   m_ObjectHideFlags: 0
