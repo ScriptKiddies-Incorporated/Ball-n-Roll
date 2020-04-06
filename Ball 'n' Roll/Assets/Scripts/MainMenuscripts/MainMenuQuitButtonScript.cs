@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainMenuQuitButtonScript : MonoBehaviour
 {
-   public void MainMenuQuitFunction()
+	public void ExitGame()
     {
         Application.Quit();
     }

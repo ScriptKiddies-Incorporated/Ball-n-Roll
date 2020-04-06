@@ -24,13 +24,13 @@ public class ScoreText : MonoBehaviour
             {
                 if (cordChecker != int.Parse(BallPlayerPos.position.z.ToString("0")))
                 {
-                    objCount = objCount + 1;
+                    objCount++;
                     cordChecker = int.Parse(BallPlayerPos.position.z.ToString("0"));
                 }
             }
             if (objCount == 5)
             {
-                score = score + 1;
+                score++;
                 objCount = 0;
             }
 

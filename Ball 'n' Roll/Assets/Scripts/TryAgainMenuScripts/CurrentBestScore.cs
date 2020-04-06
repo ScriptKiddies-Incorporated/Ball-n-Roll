@@ -11,8 +11,9 @@ public class CurrentBestScore : MonoBehaviour
     {
         if (ScoreText.score > bestScore)
         {
-            CurrentBestScore1.text = "Your current best score is: " + ScoreText.score.ToString("0");
-            bestScore = ScoreText.score;
+			bestScore = ScoreText.score;
+			CurrentBestScore1.text = "Your current best score is: " + bestScore.ToString("0");
+			// write to disk
         }
         else
         {

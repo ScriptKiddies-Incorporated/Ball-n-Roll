@@ -4,9 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class ScoreBoard : MonoBehaviour
 {
-    public Text Finalscore;
+    public Text finalScore;
     void Update()
     {
-        Finalscore.text = "Your score is: " + ScoreText.score.ToString("0");
+        finalScore.text = "Your score is: " + ScoreText.score.ToString("0");
     }
 }
