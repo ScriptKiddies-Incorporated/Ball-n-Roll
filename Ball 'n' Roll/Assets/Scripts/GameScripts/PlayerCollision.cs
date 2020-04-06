@@ -14,7 +14,6 @@ public class PlayerCollision : MonoBehaviour
         
         if (collisionInfo.collider.name == "Obstacle" || collisionInfo.collider.name == "Obstacle(Clone)")
         {
-            print("Obstacle ahead!!!");
             ObstacleSpawnerScript.timeController = false;
             Destroy(gameObject);
              Thread.Sleep(500);
