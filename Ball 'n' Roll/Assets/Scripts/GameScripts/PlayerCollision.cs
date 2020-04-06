@@ -17,10 +17,10 @@ public class PlayerCollision : MonoBehaviour
         if (collisionInfo.collider.name == "Obstacle" || collisionInfo.collider.name == "Obstacle(Clone)")
         {
             ObstacleSpawnerScript.timeController = false;
-            Destroy(gameObject);
-             Thread.Sleep(350);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+			Destroy(gameObject);
+            Thread.Sleep(200);
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		}
 
 		if (collisionInfo.collider.name == "GreenCheckpoint(Clone)")
 		{
