@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class TextureChanger : MonoBehaviour
 {
-    public Renderer renderer;
+    public Renderer renderer = new Renderer();
     public Texture[] skins;
     public void Start()
     {
