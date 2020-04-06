@@ -41,7 +41,6 @@ public class LoadBestScore : MonoBehaviour
 			CurrentBestScore.WriteScoreToDisk(0);
 		}
 			CurrentBestScore.bestScore = LoadBestScoreFromDisk();
-		print("score" + CurrentBestScore.bestScore);
 		  
 	}
 	
