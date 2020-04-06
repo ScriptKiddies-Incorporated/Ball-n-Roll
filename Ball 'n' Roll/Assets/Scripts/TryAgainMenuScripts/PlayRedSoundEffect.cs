@@ -7,6 +7,9 @@ public class PlayRedSoundEffect : MonoBehaviour
 	public GameObject redSound;
     void Start()
     {
-		Instantiate(redSound);
-    }
+        if (PlayerCollision.redSoundCondition == true)
+        {
+            Instantiate(redSound);
+        }
+      }
 }

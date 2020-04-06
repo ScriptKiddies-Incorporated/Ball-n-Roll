@@ -6,6 +6,7 @@ public class TextureChanger : MonoBehaviour
 {
     public Renderer renderer = new Renderer();
     public Texture[] skins;
+    
     public void Start()
     {
         renderer = GetComponent<Renderer>();
