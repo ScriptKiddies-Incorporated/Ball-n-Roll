@@ -34,6 +34,7 @@ public class BehaviourMovement : MonoBehaviour
         {
             print("GAME OVER!!!");
             ObstacleSpawnerScript.timeController = false;
+            PlayerCollision.redSoundCondition = true;
             Destroy(gameObject);
             Thread.Sleep(500);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);

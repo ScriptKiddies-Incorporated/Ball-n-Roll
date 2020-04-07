@@ -23,6 +23,7 @@ public class NoButtonScript : MonoBehaviour
         Destroy(go1.gameObject);
         Destroy(go2.gameObject);
         Destroy(go3.gameObject);
+        PlayerCollision.redSoundCondition = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
