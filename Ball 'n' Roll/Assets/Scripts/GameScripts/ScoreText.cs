@@ -11,8 +11,9 @@ public class ScoreText : MonoBehaviour
     public static int cordChecker = 0;
 	public GameObject wow;
 	public static bool hasPlayed = false;
+    public static bool newHighScore = false;
 
-	 void Start()
+	void Start()
 	{
 		hasPlayed = false;
 	}
@@ -50,7 +51,8 @@ public class ScoreText : MonoBehaviour
 			if (!hasPlayed)
 			{
 				Instantiate(wow);
-				// Miro, "New Best High Score" text code goes here
+                // Miro, "New Best High Score" text code goes here
+                newHighScore = true;
 				hasPlayed = true;
 			}
 		}
