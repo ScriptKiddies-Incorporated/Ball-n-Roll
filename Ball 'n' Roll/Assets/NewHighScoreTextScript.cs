@@ -11,11 +11,11 @@ public class NewHighScoreTextScript : MonoBehaviour
     {
         if(ScoreText.newHighScore == true)
         {
-            if(highScoreCounter < 600)
+            if(highScoreCounter < 100)
             {
-                newHighScore.text = "New best high score!!!";
+                newHighScore.text = "New High Score!!!";
             }
-            if(highScoreCounter == 600)
+            if(highScoreCounter == 100)
             {
                 ScoreText.newHighScore = false;
                 newHighScore.text = "";
