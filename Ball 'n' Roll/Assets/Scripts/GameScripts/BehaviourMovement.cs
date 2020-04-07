@@ -14,21 +14,19 @@ public class BehaviourMovement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
-        
+
             Ball.AddForce(0, 0, -forwardForce * Time.deltaTime);
             if (Input.GetKey("a") || Input.GetKey("d") || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
             {
                 if (Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
                 {
-                    Ball.AddForce(sidewaysForce * Time.deltaTime , 0 , 0 );
+                    Ball.AddForce(sidewaysForce * Time.deltaTime, 0, 0);
                 }
                 if (Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
                 {
-                    Ball.AddForce(-sidewaysForce * Time.deltaTime , 0 , 0 );
+                    Ball.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
                 }
             }
-
 
         if (Ball.position.y < -25f)
         {
