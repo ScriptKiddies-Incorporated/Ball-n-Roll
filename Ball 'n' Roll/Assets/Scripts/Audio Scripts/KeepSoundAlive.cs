@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KeepMainMusicAlive : MonoBehaviour
+public class KeepSoundAlive : MonoBehaviour
 {
     void Awake()
 	{
