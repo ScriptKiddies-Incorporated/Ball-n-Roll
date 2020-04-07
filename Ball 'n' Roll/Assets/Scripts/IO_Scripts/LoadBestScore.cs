@@ -14,7 +14,6 @@ public class LoadBestScore : MonoBehaviour
 		if (!Directory.Exists(dirPath))
 		{
 			Directory.CreateDirectory(dirPath);
-
 		}
 	}
 

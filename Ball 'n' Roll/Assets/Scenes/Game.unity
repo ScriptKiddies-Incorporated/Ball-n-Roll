@@ -1605,6 +1605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BallPlayerPos: {fileID: 2122226301}
   scoreText: {fileID: 1515752538}
+  wow: {fileID: 1135186462580048403, guid: a842382a698dfe340b3e882dce7921cd, type: 3}
 --- !u!114 &1515752538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2583,8 +2584,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   greenSound: {fileID: 837424364327532786, guid: 75d48c24775204947b22472d67c29491,
-    type: 3}
-  redSound: {fileID: 3826847127564611841, guid: 4153d23b491f69f40a394e6c896ff34c,
     type: 3}
 --- !u!54 &2122226305
 Rigidbody:

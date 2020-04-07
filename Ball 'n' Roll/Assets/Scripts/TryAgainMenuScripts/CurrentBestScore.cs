@@ -8,7 +8,6 @@ public class CurrentBestScore : MonoBehaviour
 {
     public Text CurrentBestScore1;
     public static int bestScore = 0;
-
 	static string userName = System.Environment.UserName;
 	public static string dirPath = "C:/Users/" + userName + "/AppData/Local/BallnRoll/";
 	public static string filePath = "C:/Users/" + userName + "/AppData/Local/BallnRoll/BestScore.bnr";
@@ -25,10 +24,12 @@ public class CurrentBestScore : MonoBehaviour
 			writer.Close();
 		}
 	}
+
 	void Update()
     {
         if (ScoreText.score > bestScore)
         {
+			
 			bestScore = ScoreText.score;
 			CurrentBestScore1.text = "Your current best score is: " + bestScore.ToString("0");
 			WriteScoreToDisk(bestScore);
