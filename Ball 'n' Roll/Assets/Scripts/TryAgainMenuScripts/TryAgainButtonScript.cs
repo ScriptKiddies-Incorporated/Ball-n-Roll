@@ -7,6 +7,8 @@ public class TryAgainButtonScript : MonoBehaviour
     {
         ScoreText.objCount = 0;
         ScoreText.cordChecker = 0;
+        VelocityCheckerScript.timeCounter = 0;
+        VelocityCheckerScript.secTimeCounter = 0;
         ScoreText.timeController2 = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
