@@ -231,7 +231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16, y: 292}
+  m_AnchoredPosition: {x: 10, y: 292}
   m_SizeDelta: {x: 430.1, y: 107}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &141065476
@@ -864,8 +864,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 0.7607843, g: 0.5176471, b: 0.8509804, a: 0.41960785}
-    m_HighlightedColor: {r: 0.4801976, g: 0.89098823, b: 0.9339623, a: 0.45490196}
-    m_PressedColor: {r: 0.15294118, g: 0.4862745, b: 0.43529412, a: 0.45490196}
+    m_HighlightedColor: {r: 0.4801976, g: 0.89098823, b: 0.9339623, a: 0.41960785}
+    m_PressedColor: {r: 0.15294118, g: 0.4862745, b: 0.43529412, a: 0.41960785}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1216,7 +1216,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14, y: 416}
+  m_AnchoredPosition: {x: 10, y: 416}
   m_SizeDelta: {x: 430.1, y: 135.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1520065103
@@ -1597,7 +1597,7 @@ PrefabInstance:
     - target: {fileID: 1141992358599227190, guid: 73a8365fb4e9967409abdba322c7e335,
         type: 3}
       propertyPath: m_Colors.m_HighlightedColor.a
-      value: 0.45490196
+      value: 0.41960785
       objectReference: {fileID: 0}
     - target: {fileID: 1141992358599227190, guid: 73a8365fb4e9967409abdba322c7e335,
         type: 3}
@@ -1617,7 +1617,7 @@ PrefabInstance:
     - target: {fileID: 1141992358599227190, guid: 73a8365fb4e9967409abdba322c7e335,
         type: 3}
       propertyPath: m_Colors.m_PressedColor.a
-      value: 0.45490196
+      value: 0.41960785
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73a8365fb4e9967409abdba322c7e335, type: 3}
