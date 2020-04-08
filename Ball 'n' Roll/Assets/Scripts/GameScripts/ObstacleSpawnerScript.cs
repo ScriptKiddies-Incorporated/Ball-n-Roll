@@ -5,6 +5,7 @@ using UnityEngine.Timeline;
 
 public class ObstacleSpawnerScript : MonoBehaviour
 {
+    public int greenInterval;
     public GameObject Obstacle;
     public GameObject Checkpoint;
     public static bool timeController = true;
@@ -36,7 +37,7 @@ public class ObstacleSpawnerScript : MonoBehaviour
             randXcord = Random.Range(-5.52f, 3.36f);
             // if (zOperater % 70 == 0)
             // {
-            if (GreenPointSpawnerFactor == 20)
+            if (GreenPointSpawnerFactor == greenInterval)
             {
                 spawnVector = new Vector3(randXcord, -1.34f, zOperater);
                 pos.position = spawnVector;
