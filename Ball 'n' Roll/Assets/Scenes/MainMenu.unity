@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5188679, g: 0.42831078, b: 0.42831078, a: 1}
+  m_Color: {r: 1, g: 0.9990684, b: 0, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -182,7 +182,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: v0.2 - alpha
+  m_Text: v0.3 - beta
 --- !u!222 &58314046
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43529412, g: 0.33333334, b: 0.33333334, a: 1}
+  m_Color: {r: 0.62704283, g: 0.21782663, b: 0.8396226, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -863,9 +863,9 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.7607843, g: 0.5176471, b: 0.8509804, a: 0.41960785}
-    m_HighlightedColor: {r: 0.4801976, g: 0.89098823, b: 0.9339623, a: 0.41960785}
-    m_PressedColor: {r: 0.15294118, g: 0.4862745, b: 0.43529412, a: 0.41960785}
+    m_NormalColor: {r: 0.7607843, g: 0.5176471, b: 0.8509804, a: 0.69411767}
+    m_HighlightedColor: {r: 0.4801976, g: 0.89098823, b: 0.9339623, a: 0.69411767}
+    m_PressedColor: {r: 0.15294118, g: 0.4862745, b: 0.43529412, a: 0.69411767}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1232,7 +1232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.4339623, g: 0.33365968, b: 0.33365968, a: 1}
+  m_Color: {r: 0.08503916, g: 0.48065948, b: 0.8584906, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1562,7 +1562,7 @@ PrefabInstance:
     - target: {fileID: 1141992358599227190, guid: 73a8365fb4e9967409abdba322c7e335,
         type: 3}
       propertyPath: m_Colors.m_NormalColor.a
-      value: 0.41960785
+      value: 0.69411767
       objectReference: {fileID: 0}
     - target: {fileID: 1141992358599227190, guid: 73a8365fb4e9967409abdba322c7e335,
         type: 3}
@@ -1597,7 +1597,7 @@ PrefabInstance:
     - target: {fileID: 1141992358599227190, guid: 73a8365fb4e9967409abdba322c7e335,
         type: 3}
       propertyPath: m_Colors.m_HighlightedColor.a
-      value: 0.41960785
+      value: 0.69411767
       objectReference: {fileID: 0}
     - target: {fileID: 1141992358599227190, guid: 73a8365fb4e9967409abdba322c7e335,
         type: 3}
@@ -1617,7 +1617,7 @@ PrefabInstance:
     - target: {fileID: 1141992358599227190, guid: 73a8365fb4e9967409abdba322c7e335,
         type: 3}
       propertyPath: m_Colors.m_PressedColor.a
-      value: 0.41960785
+      value: 0.69411767
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 73a8365fb4e9967409abdba322c7e335, type: 3}
