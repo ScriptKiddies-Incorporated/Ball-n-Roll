@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -679,7 +679,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Texture: {fileID: 8600000, guid: 46b92fac8416732488581e3d5ae320cc, type: 2}
+  m_Texture: {fileID: 8600000, guid: fec6e7bbf1011fe45ae7b8f17f490a4a, type: 2}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -992,11 +992,11 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1101239924}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: eae4e212e9125cc41b03dd031f139e71, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 0aaf79162bdc8bb4cafef4d01034458a, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
-  m_TargetTexture: {fileID: 8600000, guid: 46b92fac8416732488581e3d5ae320cc, type: 2}
+  m_TargetTexture: {fileID: 8600000, guid: fec6e7bbf1011fe45ae7b8f17f490a4a, type: 2}
   m_TimeReference: 0
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
