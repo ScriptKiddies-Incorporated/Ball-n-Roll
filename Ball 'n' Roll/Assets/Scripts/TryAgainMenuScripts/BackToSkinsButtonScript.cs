@@ -7,6 +7,7 @@ public class BackToSkinsButtonScript : MonoBehaviour
 {
    public  void BackToSkins()
     {
+        PlayerCollision.exBool = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 }

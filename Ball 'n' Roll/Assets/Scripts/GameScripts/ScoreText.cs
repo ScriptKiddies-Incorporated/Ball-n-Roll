@@ -51,7 +51,6 @@ public class ScoreText : MonoBehaviour
 			if (!hasPlayed)
 			{
 				Instantiate(wow);
-                // Miro, "New Best High Score" text code goes here
                 newHighScore = true;
 				hasPlayed = true;
 			}

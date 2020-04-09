@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 323690797691858479}
   - component: {fileID: 3890439836617290168}
   - component: {fileID: 3050317797105072531}
+  - component: {fileID: 3618694134510909972}
   m_Layer: 0
   m_Name: OnCollisionParticleSystem
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341862298433952326}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.1447473, y: -1.3907158, z: -27.286325}
+  m_LocalPosition: {x: -0.08961235, y: -1.3970313, z: -209.01694}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -865,7 +866,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5000
+      scalar: 2000
       minScalar: 1000
       maxCurve:
         serializedVersion: 2
@@ -4699,3 +4700,25 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &3618694134510909972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 341862298433952326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c42298e76db13418afd2a21f59e088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 0}
+  skins:
+  - {fileID: 2800000, guid: 364ac1444583bf547be15550ad357187, type: 3}
+  - {fileID: 2800000, guid: 96c58d66b86ec3f4aaeb8b41068f299a, type: 3}
+  - {fileID: 2800000, guid: e55b748a2ff217a49afe571f84ce2faa, type: 3}
+  - {fileID: 2800000, guid: fde812b2c584be742a39d6c9e8beb576, type: 3}
+  - {fileID: 2800000, guid: 4c14bc93bdadf134281e71697b92fadf, type: 3}
+  - {fileID: 2800000, guid: f865a6b7d993a4f459cd54b3c6b92252, type: 3}
+  - {fileID: 2800000, guid: 4e5ed342e39ba5942a248568e04f0015, type: 3}
+  - {fileID: 2800000, guid: 4c44d1753b8bcce47bf0d93fd7ffaa39, type: 3}

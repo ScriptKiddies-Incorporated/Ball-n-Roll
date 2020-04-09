@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerCollision : MonoBehaviour
 {
-	public static int exCounter = 0;
+
 	public static bool exBool = true;
 	public GameObject particleSystem;
 	public Transform particleSystemPos;
@@ -36,17 +36,10 @@ public class PlayerCollision : MonoBehaviour
 		{
 			ObstacleSpawnerScript.timeController = false;
 			redSoundCondition = true;
-			Destroy(gameObject);
+            exBool = false;
+            Destroy(gameObject);
 			Instantiate(particleSystem, particleSystemPos.position, Quaternion.identity);
-			Thread.Sleep(2000);
-			//  exBool = false;
-			// if (exCounter == 100)
-			// {
-			//  exBool = false;
 
-			// SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-			tryAgainLoader.allowSceneActivation = true;
-			// }
 		}
 
 		if (collisionInfo.collider.name == "GreenCheckpoint(Clone)")
@@ -68,4 +61,5 @@ public class PlayerCollision : MonoBehaviour
 		SceneManager.UnloadSceneAsync("MainMenu");
 		return null;
 	}
+
 }

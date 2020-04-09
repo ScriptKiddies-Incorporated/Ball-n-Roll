@@ -11,7 +11,6 @@ public class BehaviourMovement : MonoBehaviour
     public int sidewaysForce;
     public int forwardForce;
 
-    // Update is called once per frame
     void FixedUpdate()
     {
 
@@ -36,7 +35,7 @@ public class BehaviourMovement : MonoBehaviour
             Destroy(gameObject);
             Thread.Sleep(500);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            // Time.timeScale = 0;
+            
         }
     }
     

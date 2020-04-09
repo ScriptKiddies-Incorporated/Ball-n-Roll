@@ -14,6 +14,7 @@ public class EnterCheckerScript : MonoBehaviour
             VelocityCheckerScript.timeCounter = 0;
             VelocityCheckerScript.secTimeCounter = 0;
             ScoreText.timeController2 = false;
+            PlayerCollision.exBool = true;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }
