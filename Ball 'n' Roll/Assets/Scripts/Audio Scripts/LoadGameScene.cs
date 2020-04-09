@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class LoadGameScene : MonoBehaviour
 {
-	public void LoadPlayingScene()
-	{			
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);		
+	public void ShowSkinScene()
+	{
+		PlayButtonScript.skinLoader.allowSceneActivation = true;	
 	}
 	private void Start()
 	{
-		LoadPlayingScene();
+		ShowSkinScene();
 	}
 }

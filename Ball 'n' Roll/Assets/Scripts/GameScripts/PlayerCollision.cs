@@ -19,7 +19,16 @@ public class PlayerCollision : MonoBehaviour
 	public GameObject greenSound;
     public static bool redSoundCondition = true;
 
-    public void OnCollisionEnter(Collision collisionInfo)
+	public static AsyncOperation tryAgainLoader;
+
+
+	private void Awake()
+	{
+		StartCoroutine(LoadTryAgainAsyncNow());
+		StartCoroutine(UnloadMainMenu());
+	}
+
+	public void OnCollisionEnter(Collision collisionInfo)
     {
         particleSystemPos.position = ballPlayer.position + particleSystemVec;
 
@@ -30,12 +39,13 @@ public class PlayerCollision : MonoBehaviour
 			Destroy(gameObject);
             Instantiate(particleSystem, particleSystemPos.position, Quaternion.identity);
              Thread.Sleep(2000);
-            //  exBool = false;
-            // if (exCounter == 100)
-            // {
-            //  exBool = false;
-            
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+			//  exBool = false;
+			// if (exCounter == 100)
+			// {
+			//  exBool = false;
+
+			// SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+			tryAgainLoader.allowSceneActivation = true;
            // }
            }
 
@@ -45,6 +55,18 @@ public class PlayerCollision : MonoBehaviour
 		}
     }
 
-
+	IEnumerator LoadTryAgainAsyncNow()
+	{
+		yield return null;
+		tryAgainLoader = SceneManager.LoadSceneAsync("TryAgainMenu");
+		tryAgainLoader.allowSceneActivation = false;
+		yield return null;
+	}
+	
+	IEnumerator UnloadMainMenu()
+	{
+		SceneManager.UnloadSceneAsync("MainMenu");
+		return null;
+	}
 }
 
