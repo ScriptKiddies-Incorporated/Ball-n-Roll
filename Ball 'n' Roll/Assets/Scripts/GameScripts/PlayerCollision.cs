@@ -10,7 +10,7 @@ public class PlayerCollision : MonoBehaviour
 {
     public static int exCounter = 0;
     public static bool exBool = true;
-    public GameObject particleSystem;
+    public static GameObject particleSystem;
     public Transform particleSystemPos;
     public Transform ballPlayer;
     public Vector3 particleSystemVec = new Vector3(0, 0, 0);
@@ -29,13 +29,17 @@ public class PlayerCollision : MonoBehaviour
             redSoundCondition = true;
 			Destroy(gameObject);
             Instantiate(particleSystem, particleSystemPos.position, Quaternion.identity);
-             Thread.Sleep(2000);
+            // Thread.Sleep(2000);
             //  exBool = false;
             // if (exCounter == 100)
             // {
-            //  exBool = false;
-            
+              exBool = false;
+
+            if(particleSystem.activeSelf == true)
+            {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
+
            // }
            }
 

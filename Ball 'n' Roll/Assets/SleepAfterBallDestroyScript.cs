@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SleepAfterBallDestroyScript : MonoBehaviour
 {
@@ -18,12 +19,23 @@ public class SleepAfterBallDestroyScript : MonoBehaviour
      } */
     //  StartCoroutine("Waiter");
     // }
-    IEnumerator Waiter()
+    /* IEnumerator Waiter()
+     {
+         if (PlayerCollision.exBool == false)
+         {
+             print("go6o");
+             yield return new WaitForSeconds(10);
+         }
+     } */
+
+   /* public void Update()
     {
-        if (PlayerCollision.exBool == false)
+       if(PlayerCollision.exBool == false)
         {
-            print("go6o");
-            yield return new WaitForSeconds(10);
+            if (PlayerCollision.particleSystem.activeSelf == false)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
-    }
+    } */
 }
