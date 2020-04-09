@@ -25,7 +25,7 @@ public class PlayerCollision : MonoBehaviour
 	private void Awake()
 	{
 		StartCoroutine(LoadTryAgainAsyncNow());
-		StartCoroutine(UnloadMainMenu());
+		//StartCoroutine(UnloadMainMenu());
 	}
 
 	public void OnCollisionEnter(Collision collisionInfo)
@@ -56,10 +56,10 @@ public class PlayerCollision : MonoBehaviour
 		yield return null;
 	}
 
-	IEnumerator UnloadMainMenu()
+	/*IEnumerator UnloadMainMenu()
 	{
 		SceneManager.UnloadSceneAsync("MainMenu");
 		return null;
-	}
+	}*/
 
 }
