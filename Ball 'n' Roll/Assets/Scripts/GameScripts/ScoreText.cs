@@ -12,6 +12,7 @@ public class ScoreText : MonoBehaviour
 	public GameObject wow;
 	public static bool hasPlayed = false;
     public static bool newHighScore = false;
+    public GameObject ballPlayerNull2;
 
 	void Start()
 	{
@@ -20,7 +21,8 @@ public class ScoreText : MonoBehaviour
 
 	void Update()
     {
-
+        if (ballPlayerNull2 != null)
+        {
             if (timeController2 == false)
             {
                 score = 0;
@@ -44,18 +46,18 @@ public class ScoreText : MonoBehaviour
 
             scoreText.text = score.ToString("0");
 
-		if (ScoreText.score > CurrentBestScore.bestScore)
-		{
+            if (ScoreText.score > CurrentBestScore.bestScore)
+            {
 
-			
-			if (!hasPlayed)
-			{
-				Instantiate(wow);
-                newHighScore = true;
-				hasPlayed = true;
-			}
-		}
 
+                if (!hasPlayed)
+                {
+                    Instantiate(wow);
+                    newHighScore = true;
+                    hasPlayed = true;
+                }
+            }
+        }
 	}
     }
 

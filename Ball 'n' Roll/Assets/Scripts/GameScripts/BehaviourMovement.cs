@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class BehaviourMovement : MonoBehaviour
 {
+    public GameObject ballPlayerNull;
     public Rigidbody Ball;
     public static bool pauseCondition = false;
     public int sidewaysForce;
@@ -13,7 +14,8 @@ public class BehaviourMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-
+        if (ballPlayerNull != null)
+        {
             Ball.AddForce(0, 0, -forwardForce * Time.deltaTime);
             if (Input.GetKey("a") || Input.GetKey("d") || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.RightArrow))
             {
@@ -27,15 +29,16 @@ public class BehaviourMovement : MonoBehaviour
                 }
             }
 
-        if (Ball.position.y < -25f)
-        {
-            print("GAME OVER!!!");
-            ObstacleSpawnerScript.timeController = false;
-            PlayerCollision.redSoundCondition = true;
-            Destroy(gameObject);
-            Thread.Sleep(500);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            
+            if (Ball.position.y < -25f)
+            {
+                print("GAME OVER!!!");
+                ObstacleSpawnerScript.timeController = false;
+                PlayerCollision.redSoundCondition = true;
+                Destroy(gameObject);
+                Thread.Sleep(500);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+
+            }
         }
     }
     
