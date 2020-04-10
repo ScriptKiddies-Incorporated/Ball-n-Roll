@@ -12,7 +12,6 @@ public class ButtonScriptBones : MonoBehaviour
         ScoreText.cordChecker = 0;
         ScoreText.timeController2 = false;
         ButtonScriptHexagonCarbon.skinChoice = "Bones";
-		// SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 		PlayButtonScript.gameLoader.allowSceneActivation = true;
 		SceneManager.LoadScene("Game"); // this runs if the user changes their skin during the game
 	}
