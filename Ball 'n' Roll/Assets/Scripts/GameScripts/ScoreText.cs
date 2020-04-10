@@ -10,13 +10,16 @@ public class ScoreText : MonoBehaviour
     public static bool timeController2 = true;
     public static int cordChecker = 0;
 	public GameObject wow;
+	public GameObject pullUp;
 	public static bool hasPlayed = false;
     public static bool newHighScore = false;
     public GameObject ballPlayerNull2;
+	public static bool hasPulledUpPlayed = false;
 
 	void Start()
 	{
 		hasPlayed = false;
+		hasPulledUpPlayed = false;
 	}
 
 	void Update()
@@ -57,6 +60,12 @@ public class ScoreText : MonoBehaviour
                     hasPlayed = true;
                 }
             }
+
+			if (BallPlayerPos.position.y < -2.5 && !hasPulledUpPlayed)
+			{
+				Instantiate(pullUp);
+				hasPulledUpPlayed = true;
+			}
         }
 	}
     }
