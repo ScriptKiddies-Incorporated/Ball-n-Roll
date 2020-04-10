@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &341862298433952326
+--- !u!1 &9096188656792836258
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,38 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 323690797691858479}
-  - component: {fileID: 3890439836617290168}
-  - component: {fileID: 3050317797105072531}
-  - component: {fileID: 3618694134510909972}
+  - component: {fileID: 1258332518327063721}
+  - component: {fileID: 3687649245556502972}
+  - component: {fileID: 5441212721957160865}
   m_Layer: 0
-  m_Name: OnCollisionParticleSystem
+  m_Name: GreenCheckpoint Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &323690797691858479
+--- !u!4 &1258332518327063721
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341862298433952326}
+  m_GameObject: {fileID: 9096188656792836258}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -0.08961235, y: -1.3970313, z: -209.01694}
+  m_LocalPosition: {x: -0.05, y: 0.34, z: -30.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!198 &3890439836617290168
+--- !u!198 &3687649245556502972
 ParticleSystem:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341862298433952326}
+  m_GameObject: {fileID: 9096188656792836258}
   serializedVersion: 6
   lengthInSec: 0.25
   simulationSpeed: 1
@@ -116,7 +115,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.5
+      scalar: 5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -169,7 +168,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 4.75
+      scalar: 5
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -602,12 +601,12 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     maxNumParticles: 1000
-    size3D: 1
+    size3D: 0
     rotation3D: 0
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 2.5
+      scalar: 5
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -866,8 +865,8 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 2500
-      minScalar: 1500
+      scalar: 1500
+      minScalar: 750
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -983,18 +982,18 @@ ParticleSystem:
         m_Curve:
         - serializedVersion: 3
           time: 0
-          value: 0.08108727
-          inSlope: 0.04064464
-          outSlope: 0.04064464
+          value: 0.08108711
+          inSlope: 0.013872998
+          outSlope: 0.013872998
           tangentMode: 34
           weightedMode: 0
           inWeight: 0
           outWeight: 0.33333334
         - serializedVersion: 3
-          time: 0.997345
-          value: 0.12162399
-          inSlope: 0.04064464
-          outSlope: 0.04064464
+          time: 0.97354126
+          value: 0.09459305
+          inSlope: 0.013872998
+          outSlope: 0.013872998
           tangentMode: 34
           weightedMode: 0
           inWeight: 0.33333334
@@ -1361,7 +1360,7 @@ ParticleSystem:
         m_NumColorKeys: 2
         m_NumAlphaKeys: 2
   UVModule:
-    enabled: 1
+    enabled: 0
     mode: 0
     timeMode: 0
     fps: 30
@@ -3511,7 +3510,7 @@ ParticleSystem:
     multiplyColliderForceByCollisionAngle: 1
     plane0: {fileID: 7724459065496349234, guid: 02de95bbbc0312046bccec0f7511ae85,
       type: 3}
-    plane1: {fileID: 714847373510891340, guid: 5743331fa7751d841be319f2e52ba87f, type: 3}
+    plane1: {fileID: 0}
     plane2: {fileID: 0}
     plane3: {fileID: 0}
     plane4: {fileID: 0}
@@ -4638,14 +4637,14 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
---- !u!199 &3050317797105072531
+--- !u!199 &5441212721957160865
 ParticleSystemRenderer:
   serializedVersion: 6
   m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341862298433952326}
+  m_GameObject: {fileID: 9096188656792836258}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -4656,8 +4655,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10308, guid: 0000000000000000f000000000000000, type: 0}
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 22103471e3569dd4682ebc39432175f2, type: 2}
+  - {fileID: 2100000, guid: 22103471e3569dd4682ebc39432175f2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4700,25 +4699,3 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!114 &3618694134510909972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341862298433952326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2c42298e76db13418afd2a21f59e088, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  renderer: {fileID: 0}
-  skins:
-  - {fileID: 2800000, guid: 364ac1444583bf547be15550ad357187, type: 3}
-  - {fileID: 2800000, guid: 96c58d66b86ec3f4aaeb8b41068f299a, type: 3}
-  - {fileID: 2800000, guid: e55b748a2ff217a49afe571f84ce2faa, type: 3}
-  - {fileID: 2800000, guid: fde812b2c584be742a39d6c9e8beb576, type: 3}
-  - {fileID: 2800000, guid: 4c14bc93bdadf134281e71697b92fadf, type: 3}
-  - {fileID: 2800000, guid: f865a6b7d993a4f459cd54b3c6b92252, type: 3}
-  - {fileID: 2800000, guid: 4e5ed342e39ba5942a248568e04f0015, type: 3}
-  - {fileID: 2800000, guid: 4c44d1753b8bcce47bf0d93fd7ffaa39, type: 3}

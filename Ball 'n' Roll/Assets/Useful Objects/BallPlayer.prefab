@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3028370181211965571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3028370181211965568}
+  - component: {fileID: 3028370181211965560}
+  - component: {fileID: 3028370181211965561}
+  - component: {fileID: 3028370181211965566}
+  - component: {fileID: 3028370181211965567}
+  - component: {fileID: 3028370181211965564}
+  - component: {fileID: 3028370181211965565}
+  - component: {fileID: 3028370181211965570}
+  m_Layer: 0
+  m_Name: BallPlayer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3028370181211965568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3028370181211965571}
+  m_LocalRotation: {x: -0.23030296, y: -0.32392833, z: 0.6562486, w: 0.64138037}
+  m_LocalPosition: {x: -1, y: -1.43, z: 0.015}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 7.4540005, y: -46.378002, z: 88.116005}
+--- !u!33 &3028370181211965560
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3028370181211965571}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &3028370181211965561
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3028370181211965571}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 091f7abb9dd349448a8cac8062690cd7, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!135 &3028370181211965566
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3028370181211965571}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3028370181211965567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3028370181211965571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bfd1c3b798efea4fad3f62c0e548c3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ballPlayerNull: {fileID: 3028370181211965571}
+  Ball: {fileID: 3028370181211965564}
+  sidewaysForce: 1200
+  forwardForce: 400
+--- !u!54 &3028370181211965564
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3028370181211965571}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0.052
+  m_AngularDrag: 0.04
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &3028370181211965565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3028370181211965571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5aabc68d07b3b58498d66a1d960e7d01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystem: {fileID: 341862298433952326, guid: 8aca0dd902ba5594fb75613023f6a03d,
+    type: 3}
+  particleSystemPos: {fileID: 323690797691858479, guid: 8aca0dd902ba5594fb75613023f6a03d,
+    type: 3}
+  ballPlayer: {fileID: 3028370181211965568}
+  particleSystemVec: {x: 0, y: 0, z: 0}
+  greenSound: {fileID: 837424364327532786, guid: 75d48c24775204947b22472d67c29491,
+    type: 3}
+--- !u!114 &3028370181211965570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3028370181211965571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2c42298e76db13418afd2a21f59e088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  renderer: {fileID: 0}
+  skins:
+  - {fileID: 2800000, guid: 364ac1444583bf547be15550ad357187, type: 3}
+  - {fileID: 2800000, guid: 96c58d66b86ec3f4aaeb8b41068f299a, type: 3}
+  - {fileID: 2800000, guid: e55b748a2ff217a49afe571f84ce2faa, type: 3}
+  - {fileID: 2800000, guid: fde812b2c584be742a39d6c9e8beb576, type: 3}
+  - {fileID: 2800000, guid: 4c14bc93bdadf134281e71697b92fadf, type: 3}
+  - {fileID: 2800000, guid: f865a6b7d993a4f459cd54b3c6b92252, type: 3}
+  - {fileID: 2800000, guid: 4e5ed342e39ba5942a248568e04f0015, type: 3}
+  - {fileID: 2800000, guid: 4c44d1753b8bcce47bf0d93fd7ffaa39, type: 3}

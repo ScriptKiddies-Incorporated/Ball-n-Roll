@@ -9,13 +9,17 @@ using UnityEngine.SceneManagement;
 public class PlayerCollision : MonoBehaviour
 {
 
-	public static bool exBool = true;
+    public GameObject greenParticleSystem;
+    public Transform greenParticleSystemPos;
+    public Vector3 greenParticleSystemVec = new Vector3(0, 0, 0);
+
+    public static bool exBool = true;
 	public GameObject particleSystem;
 	public Transform particleSystemPos;
-	public Transform ballPlayer;
-	public Vector3 particleSystemVec = new Vector3(0, 0, 0);
+    public Transform ballPlayer;
+    public Vector3 particleSystemVec = new Vector3(0, 0, 0);
 
-	public static bool cameraPos = true;
+    public static bool cameraPos = true;
 	public GameObject greenSound;
 	public static bool redSoundCondition = true;
 
@@ -30,6 +34,7 @@ public class PlayerCollision : MonoBehaviour
 
 	public void OnCollisionEnter(Collision collisionInfo)
 	{
+
 		particleSystemPos.position = ballPlayer.position + particleSystemVec;
 
 		if (collisionInfo.collider.name == "Obstacle" || collisionInfo.collider.name == "Obstacle(Clone)")
@@ -45,7 +50,9 @@ public class PlayerCollision : MonoBehaviour
 		if (collisionInfo.collider.name == "GreenCheckpoint(Clone)")
 		{
 			Instantiate(greenSound);
-		}
+            greenParticleSystemPos.position = ballPlayer.position + greenParticleSystemVec;
+            Instantiate(greenParticleSystem, greenParticleSystemPos.position, Quaternion.identity);
+        }
 	}
 
 	IEnumerator LoadTryAgainAsyncNow()
