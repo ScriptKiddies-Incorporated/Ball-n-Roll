@@ -19,9 +19,13 @@ public class PlayerCollision : MonoBehaviour
     public Transform ballPlayer;
     public Vector3 particleSystemVec = new Vector3(0, 0, 0);
 
+    public Rigidbody ridBallPlayer;
+
     public static bool cameraPos = true;
 	public GameObject greenSound;
 	public static bool redSoundCondition = true;
+
+    public static bool collisionBool = false;
 
 	public static AsyncOperation tryAgainLoader;
 
@@ -42,6 +46,7 @@ public class PlayerCollision : MonoBehaviour
 			ObstacleSpawnerScript.timeController = false;
 			redSoundCondition = true;
             exBool = false;
+            collisionBool = true;
             Destroy(gameObject);
 			Instantiate(particleSystem, particleSystemPos.position, Quaternion.identity);
 
@@ -49,6 +54,7 @@ public class PlayerCollision : MonoBehaviour
 
 		if (collisionInfo.collider.name == "GreenCheckpoint(Clone)")
 		{
+            ridBallPlayer.velocity = Vector3.zero;
 			Instantiate(greenSound);
             greenParticleSystemPos.position = ballPlayer.position + greenParticleSystemVec;
             Instantiate(greenParticleSystem, greenParticleSystemPos.position, Quaternion.identity);

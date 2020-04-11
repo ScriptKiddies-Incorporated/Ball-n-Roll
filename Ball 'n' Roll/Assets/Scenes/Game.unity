@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1526980366}
-  m_IndirectSpecularColor: {r: 0.043393146, g: 0.044553317, b: 0.059299722, a: 1}
+  m_IndirectSpecularColor: {r: 0.04338698, g: 0.044547085, b: 0.059290156, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2462,6 +2462,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3028370183266292477}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &2122226305 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 3028370181211965564, guid: 41634a8505ad6774f993fea9f9d30d7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 3028370183266292477}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &714847374868119851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2620,6 +2626,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1258332518327063721, guid: 88554bf3dcef3fa4a90cb08975101ffb,
         type: 3}
+    - target: {fileID: 3028370181211965565, guid: 41634a8505ad6774f993fea9f9d30d7f,
+        type: 3}
+      propertyPath: ridBallPlayer
+      value: 
+      objectReference: {fileID: 2122226305}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41634a8505ad6774f993fea9f9d30d7f, type: 3}
 --- !u!1001 &7724459067091728000

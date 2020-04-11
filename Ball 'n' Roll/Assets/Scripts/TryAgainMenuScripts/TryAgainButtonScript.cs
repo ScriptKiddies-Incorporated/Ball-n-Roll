@@ -11,6 +11,9 @@ public class TryAgainButtonScript : MonoBehaviour
         VelocityCheckerScript.secTimeCounter = 0;
         ScoreText.timeController2 = false;
         PlayerCollision.exBool = true;
+        PlayerCollision.collisionBool = false;
+        MovingObstacleScript.moveForce = 0;
+       // ScoreText.score = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 }

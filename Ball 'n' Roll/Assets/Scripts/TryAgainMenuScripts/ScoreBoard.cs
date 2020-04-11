@@ -5,8 +5,13 @@ using UnityEngine.SceneManagement;
 public class ScoreBoard : MonoBehaviour
 {
     public Text finalScore;
+    public static int varScore;
+    private void Start()
+    {
+        varScore = ScoreText.score;
+    }
     void Update()
     {
-        finalScore.text = "Your score is: " + ScoreText.score.ToString("0");
+        finalScore.text = "Your score is: " + varScore.ToString("0");
     }
 }
