@@ -11,10 +11,6 @@ public class MovingObstacleScript : MonoBehaviour
     public Texture test;
     public Renderer renderer;
 
-    private void Start()
-    {
-       // ScoreText.score = 0;
-    }
 
     void FixedUpdate()
     {

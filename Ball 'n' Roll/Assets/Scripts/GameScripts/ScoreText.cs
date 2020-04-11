@@ -14,12 +14,15 @@ public class ScoreText : MonoBehaviour
 	public static bool hasPlayed = false;
     public static bool newHighScore = false;
     public GameObject ballPlayerNull2;
+	public GameObject hunderd;
 	public static bool hasPulledUpPlayed = false;
+	public static bool hasHundredPlayed = false;
 
 	void Start()
 	{
 		hasPlayed = false;
 		hasPulledUpPlayed = false;
+		hasHundredPlayed = false;
 	}
 
 	void Update()
@@ -66,6 +69,14 @@ public class ScoreText : MonoBehaviour
 				Instantiate(pullUp);
 				hasPulledUpPlayed = true;
 			}
+
+			if (ScoreText.score % 100 == 0 && !hasHundredPlayed && ScoreText.score != 0)
+			{
+				Instantiate(hunderd);
+				hasHundredPlayed = true;
+			}
+
+			if ((ScoreText.score % 100) > 0) hasHundredPlayed = false;
         }
 	}
     }
