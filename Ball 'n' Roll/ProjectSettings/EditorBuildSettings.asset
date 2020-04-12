@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TryAgainMenu.unity
     guid: be438ee57ee83b7418880b6fc9fd3f10
+  - enabled: 1
+    path: Assets/Scenes/Settings Menu.unity
+    guid: c20adce4c3573014abb5c62ed59a8811
   m_configObjects: {}

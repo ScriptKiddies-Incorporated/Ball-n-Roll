@@ -8,17 +8,26 @@ public class PlayButtonScript : MonoBehaviour
 	public static AsyncOperation audioLoader;
 	public static AsyncOperation skinLoader;
 	public static AsyncOperation gameLoader;
+	public GameObject StartMusic;
+	bool isFirstTime = true;
 	private void Awake()
 	{
-		//audioLoader = SceneManager.LoadSceneAsync("AudioScene");
-		//skinLoader = SceneManager.LoadSceneAsync("SkinSelector");
-		//gameLoader = SceneManager.LoadSceneAsync("Game");
-		//SceneManager.LoadSceneAsync("AudioScene");
 		StartCoroutine(LoadScenesAsyncNow());
+	}
+
+	void Start()
+	{
+		if (MusicScript.isStartMusicFirstTime)
+		{
+			Instantiate(StartMusic);		
+			DontDestroyOnLoad(transform.gameObject);
+			StartMusic.SetActive(true);
+			MusicScript.isStartMusicFirstTime = false;
+		}
 	}
 	public void OnClickButton()
 	{
-		//   SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		MusicScript.shouldMainMusicBeStopped = true;
 		audioLoader.allowSceneActivation = true;
     }
 
