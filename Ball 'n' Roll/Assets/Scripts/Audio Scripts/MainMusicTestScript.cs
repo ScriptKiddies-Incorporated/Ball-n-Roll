@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MainMusicTestScript : MonoBehaviour
 {
+
+	//GameObject StartMusic;
     // Start is called before the first frame update
     void Start()
     {
@@ -12,7 +14,9 @@ public class MainMusicTestScript : MonoBehaviour
 
 	public void Awake()
 	{
-		DontDestroyOnLoad(transform.gameObject);
+	//	DontDestroyOnLoad(transform.gameObject);
+		//DontDestroyOnLoad(StartMusic);
+		DontDestroyOnLoad(this);
 		if (MusicScript.isStartMusicFirstTime)
 		{
 			this.GetComponent<AudioSource>().Play();
@@ -25,6 +29,7 @@ public class MainMusicTestScript : MonoBehaviour
 		if (MusicScript.shouldMainMusicBeStopped)
 		{
 			Destroy(transform.gameObject);
+			this.GetComponent<AudioSource>().Stop();
 		}
 		
 	}

@@ -8,7 +8,13 @@ public class SettingsButtonScript : MonoBehaviour
 	// Start is called before the first frame update
 	public GameObject gameMusic;
 	public GameObject mainMenuMusic;
-    public void OnButtonClick()
+
+	private void Awake()
+	{
+		DontDestroyOnLoad(mainMenuMusic);
+		DontDestroyOnLoad(transform.gameObject);
+	}
+	public void OnButtonClick()
     {
 		DontDestroyOnLoad(transform.gameObject);
 		PlayButtonScript.audioLoader.allowSceneActivation = false;

@@ -12,6 +12,7 @@ public class PlayButtonScript : MonoBehaviour
 	bool isFirstTime = true;
 	private void Awake()
 	{
+		DontDestroyOnLoad(StartMusic);
 		StartCoroutine(LoadScenesAsyncNow());
 	}
 
@@ -20,7 +21,6 @@ public class PlayButtonScript : MonoBehaviour
 		if (MusicScript.isStartMusicFirstTime)
 		{
 			Instantiate(StartMusic);		
-			DontDestroyOnLoad(transform.gameObject);
 			StartMusic.SetActive(true);
 			MusicScript.isStartMusicFirstTime = false;
 		}
