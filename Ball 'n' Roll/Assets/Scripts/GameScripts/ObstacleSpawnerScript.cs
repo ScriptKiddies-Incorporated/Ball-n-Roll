@@ -5,6 +5,7 @@ using UnityEngine.Timeline;
 
 public class ObstacleSpawnerScript : MonoBehaviour
 {
+    public GameObject ballPlayerNull2;
     public Transform Ball;
     public static bool planeCollisionChecker = true;
 
@@ -28,63 +29,65 @@ public class ObstacleSpawnerScript : MonoBehaviour
 
     void Update()
     {
-        if (PlayerCollision.exBool != false)
+        if (ballPlayerNull2 != null)
         {
-            if (counter % 10 == 0)
+            if (PlayerCollision.exBool != false)
             {
+                if (counter % 10 == 0)
+                {
 
-                if (timeController == false)
-                {
-                    zOperater = -98;
-                    timeController = true;
-                    counter = 0;
-                }
-                randXcord = Random.Range(-5.52f, 3.36f);
-                if (GreenPointSpawnerFactor == greenInterval)
-                {
+                    if (timeController == false)
+                    {
+                        zOperater = -98;
+                        timeController = true;
+                        counter = 0;
+                    }
+                    randXcord = Random.Range(-5.52f, 3.36f);
+                    if (GreenPointSpawnerFactor == greenInterval)
+                    {
+                        spawnVector = new Vector3(randXcord, -1.34f, zOperater);
+                        pos.position = spawnVector;
+                        Instantiate(Checkpoint, pos.position, Quaternion.identity);
+                        zOperater = zOperater - 7;
+                        GreenPointSpawnerFactor = 0;
+                        isThereGreenCheckpoint = true;
+                    }
+                    if (isThereGreenCheckpoint == false && RampSpawnerFactor == rampInterval)
+                    {
+                        spawnVector = new Vector3(randXcord, -1.34f, zOperater);
+                        pos.position = spawnVector;
+                        GameObject gameRamp = GameObject.Instantiate(Ramp, pos.position, Quaternion.identity);
+                        gameRamp.transform.Rotate(90f, 90f, 0);
+                        zOperater = zOperater - 7;
+                        RampSpawnerFactor = 0;
+                    }
                     spawnVector = new Vector3(randXcord, -1.34f, zOperater);
                     pos.position = spawnVector;
-                    Instantiate(Checkpoint, pos.position, Quaternion.identity);
+                    Instantiate(Obstacle, pos.position, Quaternion.identity);
                     zOperater = zOperater - 7;
-                    GreenPointSpawnerFactor = 0;
-                    isThereGreenCheckpoint = true;
+
+                    if (isThereGreenCheckpoint == true && RampSpawnerFactor == rampInterval)
+                    {
+                        RampSpawnerFactor = 0;
+                    }
+                    isThereGreenCheckpoint = false;
+                    GreenPointSpawnerFactor++;
+                    RampSpawnerFactor++;
+
+
                 }
-                if(isThereGreenCheckpoint == false && RampSpawnerFactor == rampInterval)
+                counter++;
+                if (Ball.position.y == -1.41)
                 {
-                    spawnVector = new Vector3(randXcord, -1.34f, zOperater);
-                    pos.position = spawnVector;
-                   GameObject gameRamp = GameObject.Instantiate(Ramp, pos.position, Quaternion.identity);
-                    gameRamp.transform.Rotate(90f, 90f, 0);
-                    zOperater = zOperater - 7;
-                    RampSpawnerFactor = 0;
+                    planeCollisionChecker = true;
                 }
-                spawnVector = new Vector3(randXcord, -1.34f, zOperater);
-                pos.position = spawnVector;
-                Instantiate(Obstacle, pos.position, Quaternion.identity);
-                zOperater = zOperater - 7;
-
-                if (isThereGreenCheckpoint == true && RampSpawnerFactor == rampInterval)
+                if (Ball.position.y != -1.41)
                 {
-                    RampSpawnerFactor = 0;
+                    planeCollisionChecker = false;
                 }
-                isThereGreenCheckpoint = false;
-                GreenPointSpawnerFactor++;
-                RampSpawnerFactor++;
-
-
+                //print(Ball.position.y);
             }
-            counter++;
-             if (Ball.position.y == -1.41)
-             {
-                 planeCollisionChecker = true;
-             }
-             if (Ball.position.y != -1.41)
-             {
-                 planeCollisionChecker = false;
-             }
-            print(Ball.position.y);
         }
-        
         if (PlayerCollision.exBool == false)
         {
               Invoke("Waiter", 2);     

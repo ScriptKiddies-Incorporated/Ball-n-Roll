@@ -1085,7 +1085,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Ball3: {fileID: 2122226305}
-  ballObject: {fileID: 2122226301}
 --- !u!1001 &919011522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1268,6 +1267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53cb2d61effd7904e82a0887ce65cf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballPlayerNull2: {fileID: 2122226302}
   Ball: {fileID: 2122226301}
   rampInterval: 50
   Ramp: {fileID: 5238153340602728587, guid: 54133de14b133f448834665a8229aec9, type: 3}
