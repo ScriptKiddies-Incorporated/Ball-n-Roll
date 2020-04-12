@@ -141,7 +141,7 @@ Transform:
   m_Children:
   - {fileID: 1694305203}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &191730354
 GameObject:
@@ -897,7 +897,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &681904052
 PrefabInstance:
@@ -1066,6 +1066,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752125359}
   m_CullTransparentMesh: 0
+--- !u!1 &878153817 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7724459065496349230, guid: 02de95bbbc0312046bccec0f7511ae85,
+    type: 3}
+  m_PrefabInstance: {fileID: 7724459067091728000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &878153822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878153817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2840f37b6e1e06c4ab0df95c7ba1b557, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Ball3: {fileID: 2122226305}
+  ballObject: {fileID: 2122226301}
 --- !u!1001 &919011522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1185,7 +1205,7 @@ PrefabInstance:
     - target: {fileID: 714847373510891340, guid: 5743331fa7751d841be319f2e52ba87f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 25
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 714847373510891340, guid: 5743331fa7751d841be319f2e52ba87f,
         type: 3}
@@ -1248,6 +1268,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53cb2d61effd7904e82a0887ce65cf63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ball: {fileID: 2122226301}
+  rampInterval: 50
+  Ramp: {fileID: 5238153340602728587, guid: 54133de14b133f448834665a8229aec9, type: 3}
   greenInterval: 40
   Obstacle: {fileID: 714847373510891336, guid: 5743331fa7751d841be319f2e52ba87f, type: 3}
   Checkpoint: {fileID: 4868338110890880758, guid: 49280be42b121d44bb4a31218fde963b,
@@ -1909,7 +1932,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 66.27901, y: 233.23898, z: 114.422005}
 --- !u!1001 &1617501123
 PrefabInstance:
@@ -2632,6 +2655,11 @@ PrefabInstance:
       propertyPath: ridBallPlayer
       value: 
       objectReference: {fileID: 2122226305}
+    - target: {fileID: 3028370181211965567, guid: 41634a8505ad6774f993fea9f9d30d7f,
+        type: 3}
+      propertyPath: sidewaysForce
+      value: 1200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 41634a8505ad6774f993fea9f9d30d7f, type: 3}
 --- !u!1001 &7724459067091728000
@@ -2684,7 +2712,7 @@ PrefabInstance:
     - target: {fileID: 7724459065496349234, guid: 02de95bbbc0312046bccec0f7511ae85,
         type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 7724459065496349234, guid: 02de95bbbc0312046bccec0f7511ae85,
         type: 3}

@@ -5,6 +5,14 @@ using UnityEngine.Timeline;
 
 public class ObstacleSpawnerScript : MonoBehaviour
 {
+    public Transform Ball;
+    public static bool planeCollisionChecker = true;
+
+    public int rampInterval;
+    public GameObject Ramp;
+    public static int RampSpawnerFactor = 0; 
+    public static bool isThereGreenCheckpoint = false;
+
     public int greenInterval;
     public GameObject Obstacle;
     public GameObject Checkpoint;
@@ -39,18 +47,44 @@ public class ObstacleSpawnerScript : MonoBehaviour
                     Instantiate(Checkpoint, pos.position, Quaternion.identity);
                     zOperater = zOperater - 7;
                     GreenPointSpawnerFactor = 0;
+                    isThereGreenCheckpoint = true;
+                }
+                if(isThereGreenCheckpoint == false && RampSpawnerFactor == rampInterval)
+                {
+                    spawnVector = new Vector3(randXcord, -1.34f, zOperater);
+                    pos.position = spawnVector;
+                   GameObject gameRamp = GameObject.Instantiate(Ramp, pos.position, Quaternion.identity);
+                    gameRamp.transform.Rotate(90f, 90f, 0);
+                    zOperater = zOperater - 7;
+                    RampSpawnerFactor = 0;
                 }
                 spawnVector = new Vector3(randXcord, -1.34f, zOperater);
                 pos.position = spawnVector;
                 Instantiate(Obstacle, pos.position, Quaternion.identity);
                 zOperater = zOperater - 7;
 
+                if (isThereGreenCheckpoint == true && RampSpawnerFactor == rampInterval)
+                {
+                    RampSpawnerFactor = 0;
+                }
+                isThereGreenCheckpoint = false;
                 GreenPointSpawnerFactor++;
+                RampSpawnerFactor++;
+
 
             }
             counter++;
-
+             if (Ball.position.y == -1.41)
+             {
+                 planeCollisionChecker = true;
+             }
+             if (Ball.position.y != -1.41)
+             {
+                 planeCollisionChecker = false;
+             }
+            print(Ball.position.y);
         }
+        
         if (PlayerCollision.exBool == false)
         {
               Invoke("Waiter", 2);     

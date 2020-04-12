@@ -17,7 +17,8 @@ public class EnterCheckerScript : MonoBehaviour
             PlayerCollision.exBool = true;
             PlayerCollision.collisionBool = false;
             MovingObstacleScript.moveForce = 0;
-           // ScoreText.score = 0;
+            PlaneCollisionScript.exCollCheck = true;
+            BehaviourMovement.forwardForce = 400;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
     }

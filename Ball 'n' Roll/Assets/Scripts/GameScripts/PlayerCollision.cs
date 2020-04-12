@@ -47,6 +47,9 @@ public class PlayerCollision : MonoBehaviour
 			redSoundCondition = true;
             exBool = false;
             collisionBool = true;
+            BehaviourMovement.forwardForce = 400;
+            PlaneCollisionScript.exCollCheck = true;
+            RampCollisionCheckScript.collCheck = true;
             Destroy(gameObject);
 			Instantiate(particleSystem, particleSystemPos.position, Quaternion.identity);
 
@@ -55,7 +58,10 @@ public class PlayerCollision : MonoBehaviour
 		if (collisionInfo.collider.name == "GreenCheckpoint(Clone)")
 		{
             ridBallPlayer.velocity = Vector3.zero;
-			Instantiate(greenSound);
+            BehaviourMovement.forwardForce = 400;
+            PlaneCollisionScript.exCollCheck = true;
+            RampCollisionCheckScript.collCheck = true;
+            Instantiate(greenSound);
             greenParticleSystemPos.position = ballPlayer.position + greenParticleSystemVec;
             Instantiate(greenParticleSystem, greenParticleSystemPos.position, Quaternion.identity);
         }
