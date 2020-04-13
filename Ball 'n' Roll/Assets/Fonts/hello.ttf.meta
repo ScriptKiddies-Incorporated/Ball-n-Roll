@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: fd7c3bbca2c07ae48adc7c1a580e7ef4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Hello I'am Coming (version 2)
+  fontNames:
+  - Hello I'am Coming (version 2)
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a01ccbb99b8edd04b896b9c6565adc32, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
