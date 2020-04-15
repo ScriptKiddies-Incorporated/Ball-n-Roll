@@ -8,12 +8,16 @@ public class ChangeSettings : MonoBehaviour
 {
 	public AudioMixer mainAudioMixer;
 	public TMPro.TMP_Dropdown quality;
+	public Slider volumeSlider;
+	public Toggle fullscreen;
 	public int value;
-	public static string key = "value";
+	public string qualityKey = "value";
 
 	private void Start()
 	{ 
-		quality.value = PlayerPrefs.GetInt(key);
+		quality.value = PlayerPrefs.GetInt(qualityKey);
+		volumeSlider.value = PlayerPrefs.GetFloat("volume");
+		fullscreen.GetComponent<Toggle>().isOn = System.Convert.ToBoolean(PlayerPrefs.GetInt("fullscreen"));
 	}
 	public void SetFullScreen(bool isFullScreen)
 	{
@@ -26,11 +30,14 @@ public class ChangeSettings : MonoBehaviour
 		{
 			Screen.fullScreen = false;
 		}
+
+		PlayerPrefs.SetInt("fullscreen", System.Convert.ToInt32(fullscreen.GetComponent<Toggle>().isOn));
 	}
 
 	public void SetVolume(float chosenVolume)
 	{
 		mainAudioMixer.SetFloat("masterVolume", chosenVolume);
+		PlayerPrefs.SetFloat("volume", chosenVolume);
 	}
 
 	public void SetQuality(int qualityIndex)
@@ -51,7 +58,7 @@ public class ChangeSettings : MonoBehaviour
 		}
 
 	
-		PlayerPrefs.SetInt(key, quality.value);
+		PlayerPrefs.SetInt(qualityKey, quality.value);
 		
 	}
 }
