@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -576,6 +576,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EmeraldMosaicTextOriginal
       objectReference: {fileID: 0}
+    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
+        type: 3}
+      propertyPath: m_Text
+      value: Emerald Mosaic
+      objectReference: {fileID: 0}
     - target: {fileID: 148570361092340380, guid: b0910ebf24c6742479708ef54c1cd00f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -680,11 +685,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
-        type: 3}
-      propertyPath: m_Text
-      value: Emerald Mosaic
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0910ebf24c6742479708ef54c1cd00f, type: 3}
@@ -961,6 +961,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FootballTextOriginal
       objectReference: {fileID: 0}
+    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
+        type: 3}
+      propertyPath: m_Text
+      value: Football
+      objectReference: {fileID: 0}
     - target: {fileID: 148570361092340380, guid: b0910ebf24c6742479708ef54c1cd00f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1065,11 +1070,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
-        type: 3}
-      propertyPath: m_Text
-      value: Football
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0910ebf24c6742479708ef54c1cd00f, type: 3}
@@ -1424,6 +1424,7 @@ GameObject:
   - component: {fileID: 853085211}
   - component: {fileID: 853085213}
   - component: {fileID: 853085212}
+  - component: {fileID: 853085214}
   m_Layer: 5
   m_Name: BackgroundPanel
   m_TagString: Untagged
@@ -1488,6 +1489,40 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 853085210}
   m_CullTransparentMesh: 0
+--- !u!328 &853085214
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853085210}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: eae4e212e9125cc41b03dd031f139e71, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8600000, guid: 46b92fac8416732488581e3d5ae320cc, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 01
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 0
+  m_Looping: 1
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
 --- !u!1001 &858376722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1741,6 +1776,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PokeballTextOriginal
       objectReference: {fileID: 0}
+    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
+        type: 3}
+      propertyPath: m_Text
+      value: Pokeball
+      objectReference: {fileID: 0}
     - target: {fileID: 148570361092340380, guid: b0910ebf24c6742479708ef54c1cd00f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1846,11 +1886,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
-        type: 3}
-      propertyPath: m_Text
-      value: Pokeball
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0910ebf24c6742479708ef54c1cd00f, type: 3}
 --- !u!224 &897141113
@@ -1941,6 +1976,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PokeballImage
       objectReference: {fileID: 0}
+    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: f38025206dca5794ca24be5c081a7960, type: 3}
     - target: {fileID: 1804262118600431388, guid: 93e3e2f86811bb84c9f235a81294bfcc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2046,11 +2086,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 2800000, guid: f38025206dca5794ca24be5c081a7960, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93e3e2f86811bb84c9f235a81294bfcc, type: 3}
 --- !u!224 &972855274
@@ -2085,6 +2120,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FootballImage
       objectReference: {fileID: 0}
+    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 04617b3fd2651414fa4db7c0fa1cff16, type: 3}
     - target: {fileID: 1804262118600431388, guid: 93e3e2f86811bb84c9f235a81294bfcc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2190,11 +2230,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 2800000, guid: 04617b3fd2651414fa4db7c0fa1cff16, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93e3e2f86811bb84c9f235a81294bfcc, type: 3}
 --- !u!224 &1155300035
@@ -2229,6 +2264,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MultiverseImage
       objectReference: {fileID: 0}
+    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: a8fb4e3f79f462341a2d11e4b88c2b1f, type: 3}
     - target: {fileID: 1804262118600431388, guid: 93e3e2f86811bb84c9f235a81294bfcc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2334,11 +2374,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 2800000, guid: a8fb4e3f79f462341a2d11e4b88c2b1f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93e3e2f86811bb84c9f235a81294bfcc, type: 3}
 --- !u!224 &1181054857
@@ -2373,6 +2408,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AvatarBitcoinImage
       objectReference: {fileID: 0}
+    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 13320016630be754aaa3b16aa42f6b0a, type: 3}
     - target: {fileID: 1804262118600431388, guid: 93e3e2f86811bb84c9f235a81294bfcc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2478,11 +2518,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 2800000, guid: 13320016630be754aaa3b16aa42f6b0a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93e3e2f86811bb84c9f235a81294bfcc, type: 3}
 --- !u!224 &1271621350
@@ -2698,6 +2733,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BulgariaTextOriginal
       objectReference: {fileID: 0}
+    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
+        type: 3}
+      propertyPath: m_Text
+      value: Bulgaria
+      objectReference: {fileID: 0}
     - target: {fileID: 148570361092340380, guid: b0910ebf24c6742479708ef54c1cd00f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2803,11 +2843,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
-        type: 3}
-      propertyPath: m_Text
-      value: Bulgaria
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0910ebf24c6742479708ef54c1cd00f, type: 3}
 --- !u!224 &1473294430
@@ -2897,6 +2932,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AvatarBitcoinTextOriginal
+      objectReference: {fileID: 0}
+    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
+        type: 3}
+      propertyPath: m_Text
+      value: Avatar Bitcoin
       objectReference: {fileID: 0}
     - target: {fileID: 148570361092340380, guid: b0910ebf24c6742479708ef54c1cd00f,
         type: 3}
@@ -3002,11 +3042,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
-        type: 3}
-      propertyPath: m_Text
-      value: Avatar Bitcoin
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0910ebf24c6742479708ef54c1cd00f, type: 3}
@@ -3220,6 +3255,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeepBlueImage
       objectReference: {fileID: 0}
+    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 2cf0436655e283c4fa11de34057c8f2f, type: 3}
     - target: {fileID: 1804262118600431388, guid: 93e3e2f86811bb84c9f235a81294bfcc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3325,11 +3365,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 2800000, guid: 2cf0436655e283c4fa11de34057c8f2f, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93e3e2f86811bb84c9f235a81294bfcc, type: 3}
 --- !u!224 &1578852842
@@ -3363,6 +3398,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DeepBlueTextOriginal
+      objectReference: {fileID: 0}
+    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
+        type: 3}
+      propertyPath: m_Text
+      value: Deep Blue
       objectReference: {fileID: 0}
     - target: {fileID: 148570361092340380, guid: b0910ebf24c6742479708ef54c1cd00f,
         type: 3}
@@ -3469,11 +3509,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
-        type: 3}
-      propertyPath: m_Text
-      value: Deep Blue
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0910ebf24c6742479708ef54c1cd00f, type: 3}
 --- !u!224 &1599870508
@@ -3508,6 +3543,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BulgariaImage
       objectReference: {fileID: 0}
+    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: f1d2266d8d282d54e9c099049658c11d, type: 3}
     - target: {fileID: 1804262118600431388, guid: 93e3e2f86811bb84c9f235a81294bfcc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3613,11 +3653,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 2800000, guid: f1d2266d8d282d54e9c099049658c11d, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93e3e2f86811bb84c9f235a81294bfcc, type: 3}
 --- !u!224 &1664020940
@@ -3814,6 +3849,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EmeraldMosaicImage
       objectReference: {fileID: 0}
+    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
+        type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 5d0474ccc7b9d8845bab1495d33612d5, type: 3}
     - target: {fileID: 1804262118600431388, guid: 93e3e2f86811bb84c9f235a81294bfcc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3919,11 +3959,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 1804262118600431387, guid: 93e3e2f86811bb84c9f235a81294bfcc,
-        type: 3}
-      propertyPath: m_Texture
-      value: 
-      objectReference: {fileID: 2800000, guid: 5d0474ccc7b9d8845bab1495d33612d5, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93e3e2f86811bb84c9f235a81294bfcc, type: 3}
 --- !u!224 &1787144261
@@ -4570,6 +4605,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MultiverseTextOriginal
       objectReference: {fileID: 0}
+    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
+        type: 3}
+      propertyPath: m_Text
+      value: Multiverse
+      objectReference: {fileID: 0}
     - target: {fileID: 148570361092340380, guid: b0910ebf24c6742479708ef54c1cd00f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4674,11 +4714,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 148570361092340383, guid: b0910ebf24c6742479708ef54c1cd00f,
-        type: 3}
-      propertyPath: m_Text
-      value: Multiverse
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b0910ebf24c6742479708ef54c1cd00f, type: 3}
