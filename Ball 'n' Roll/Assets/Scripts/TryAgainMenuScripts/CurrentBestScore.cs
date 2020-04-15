@@ -31,12 +31,12 @@ public class CurrentBestScore : MonoBehaviour
         {
 			
 			bestScore = ScoreText.score;
-			CurrentBestScore1.text = "Your current best score is: " + bestScore.ToString("0");
+			CurrentBestScore1.text = "High Score: " + bestScore.ToString("0");
 			WriteScoreToDisk(bestScore);
         }
         else
         {
-            CurrentBestScore1.text = "Your current best score is: " + bestScore.ToString("0");
+            CurrentBestScore1.text = "High Score: " + bestScore.ToString("0");
         }
     }
 }

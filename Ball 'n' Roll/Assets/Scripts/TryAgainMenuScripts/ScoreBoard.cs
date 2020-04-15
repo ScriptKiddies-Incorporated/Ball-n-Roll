@@ -12,6 +12,6 @@ public class ScoreBoard : MonoBehaviour
     }
     void Update()
     {
-        finalScore.text = "Your score is: " + varScore.ToString("0");
+        finalScore.text = "Your Score: " + varScore.ToString("0");
     }
 }
