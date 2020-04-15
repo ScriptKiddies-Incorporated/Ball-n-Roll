@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -843,22 +843,37 @@ PrefabInstance:
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Text
-      value: Fire Borne
+      value: FireBorne
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.43529412
+      value: 0.20392157
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.33333334
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f44c3a2b37b7144bea4e4d227fb19e, type: 3}
@@ -1341,7 +1356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43529412, g: 0.33333334, b: 0.33333334, a: 1}
+  m_Color: {r: 0.20392157, g: 0, b: 0.5294118, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1349,12 +1364,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1897,6 +1912,42 @@ PrefabInstance:
       propertyPath: m_Text
       value: Hexagon Carbon
       objectReference: {fileID: 0}
+    - target: {fileID: 5686383184429474479, guid: b9c342e48ca1c1247a6ba5aadac9d572,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.20392157
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686383184429474479, guid: b9c342e48ca1c1247a6ba5aadac9d572,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686383184429474479, guid: b9c342e48ca1c1247a6ba5aadac9d572,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686383184429474479, guid: b9c342e48ca1c1247a6ba5aadac9d572,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686383184429474479, guid: b9c342e48ca1c1247a6ba5aadac9d572,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686383184429474479, guid: b9c342e48ca1c1247a6ba5aadac9d572,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686383184429474479, guid: b9c342e48ca1c1247a6ba5aadac9d572,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b9c342e48ca1c1247a6ba5aadac9d572, type: 3}
 --- !u!224 &420266299 stripped
@@ -2229,7 +2280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43529412, g: 0.33333334, b: 0.33333334, a: 1}
+  m_Color: {r: 0.20392157, g: 0, b: 0.5294118, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2237,19 +2288,19 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fire Borne
+  m_Text: FireBorne
 --- !u!222 &602782969
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2695,17 +2746,32 @@ PrefabInstance:
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.43529412
+      value: 0.20392157
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.33333334
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f44c3a2b37b7144bea4e4d227fb19e, type: 3}
@@ -2854,17 +2920,32 @@ PrefabInstance:
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.43529412
+      value: 0.20392157
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.33333334
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f44c3a2b37b7144bea4e4d227fb19e, type: 3}
@@ -3456,7 +3537,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43529412, g: 0.33333334, b: 0.33333334, a: 1}
+  m_Color: {r: 0.20392157, g: 0, b: 0.5294118, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3464,12 +3545,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3519,7 +3600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43529412, g: 0.33333334, b: 0.33333334, a: 1}
+  m_Color: {r: 0.20392157, g: 0, b: 0.5294118, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3527,12 +3608,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3582,7 +3663,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43529412, g: 0.33333334, b: 0.33333334, a: 1}
+  m_Color: {r: 0.20392157, g: 0, b: 0.5294118, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3590,12 +3671,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -3737,17 +3818,32 @@ PrefabInstance:
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.43529412
+      value: 0.20392157
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.33333334
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f44c3a2b37b7144bea4e4d227fb19e, type: 3}
@@ -5219,7 +5315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43529412, g: 0.33333334, b: 0.33333334, a: 1}
+  m_Color: {r: 0.20392157, g: 0, b: 0.5294118, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5227,12 +5323,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -5473,17 +5569,32 @@ PrefabInstance:
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.43529412
+      value: 0.20392157
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.33333334
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f44c3a2b37b7144bea4e4d227fb19e, type: 3}
@@ -5740,7 +5851,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.43529412, g: 0.33333334, b: 0.33333334, a: 1}
+  m_Color: {r: 0.20392157, g: 0, b: 0.5294118, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5748,12 +5859,12 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 40
+    m_Font: {fileID: 12800000, guid: 5dd49b3eacc540408c98eee0de38e0f1, type: 3}
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 1
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 60
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -6318,17 +6429,32 @@ PrefabInstance:
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.43529412
+      value: 0.20392157
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.33333334
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.33333334
+      value: 0.5294118
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436830255192766403, guid: f6f44c3a2b37b7144bea4e4d227fb19e,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 60
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6f44c3a2b37b7144bea4e4d227fb19e, type: 3}
