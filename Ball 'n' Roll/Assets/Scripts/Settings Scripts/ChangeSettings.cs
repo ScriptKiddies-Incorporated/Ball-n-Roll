@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class ChangeSettings : MonoBehaviour
 {
 	public AudioMixer mainAudioMixer;
-	public Dropdown quality;
+	public TMPro.TMP_Dropdown quality;
+	public int value;
+	public static string key = "value";
+
+	private void Start()
+	{ 
+		quality.value = PlayerPrefs.GetInt(key);
+	}
 	public void SetFullScreen(bool isFullScreen)
 	{
 		if (isFullScreen)
@@ -42,7 +50,8 @@ public class ChangeSettings : MonoBehaviour
 				break;
 		}
 
-		//quality.
+	
+		PlayerPrefs.SetInt(key, quality.value);
 		
 	}
 }

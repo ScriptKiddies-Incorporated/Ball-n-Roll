@@ -7,6 +7,7 @@ public class CloseSettingsScript : MonoBehaviour
 	public void OnButtonClick()
 	{
 		PlayerPrefs.Save();
-		SceneManager.LoadScene("MainMenu");
+	    SceneManager.LoadScene("MainMenu", LoadSceneMode.Additive);
+		//SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(5));
 	}
 }

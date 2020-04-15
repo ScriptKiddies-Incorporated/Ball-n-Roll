@@ -2221,6 +2221,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainAudioMixer: {fileID: 24100000, guid: 15282c878d3ad224ca527c348dbcda83, type: 2}
+  quality: {fileID: 1179169654}
+  value: 0
 --- !u!1 &1395069351
 GameObject:
   m_ObjectHideFlags: 0

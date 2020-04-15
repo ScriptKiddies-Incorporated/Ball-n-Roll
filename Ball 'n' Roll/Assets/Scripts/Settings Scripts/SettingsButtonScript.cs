@@ -8,6 +8,7 @@ public class SettingsButtonScript : MonoBehaviour
 	// Start is called before the first frame update
 	public GameObject gameMusic;
 	public GameObject mainMenuMusic;
+	
 
 	private void Awake()
 	{
@@ -18,8 +19,19 @@ public class SettingsButtonScript : MonoBehaviour
     {
 		DontDestroyOnLoad(transform.gameObject);
 		PlayButtonScript.audioLoader.allowSceneActivation = false;
+		/*if (MusicScript.isSettingsFirstTime)
+		{
+			MusicScript.isSettingsFirstTime = false;
+			SceneManager.LoadScene("Settings Menu");
+		}
+		else
+		{
+			SceneManager.SetActiveScene(SceneManager.GetSceneByName("Settings Menu"));
+			Debug.Log("scene loading");
+			print("load scene");
+		}*/
 		SceneManager.LoadScene("Settings Menu");
 		//Destroy();
-    }
+	}
 
 }
