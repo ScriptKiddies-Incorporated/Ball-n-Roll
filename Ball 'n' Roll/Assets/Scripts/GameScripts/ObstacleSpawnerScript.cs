@@ -6,8 +6,7 @@ using UnityEngine.Timeline;
 public class ObstacleSpawnerScript : MonoBehaviour
 {
     public GameObject ballPlayerNull2;
-    public Transform Ball;
-    public static bool planeCollisionChecker = true;
+   // public Transform Ball;
 
     public int rampInterval;
     public GameObject Ramp;
@@ -77,16 +76,9 @@ public class ObstacleSpawnerScript : MonoBehaviour
 
                 }
                 counter++;
-                if (Ball.position.y == -1.41)
-                {
-                    planeCollisionChecker = true;
-                }
-                if (Ball.position.y != -1.41)
-                {
-                    planeCollisionChecker = false;
-                }
-                //print(Ball.position.y);
+
             }
+
         }
         if (PlayerCollision.exBool == false)
         {

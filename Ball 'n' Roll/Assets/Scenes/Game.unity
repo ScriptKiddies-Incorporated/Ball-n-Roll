@@ -1268,8 +1268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPlayerNull2: {fileID: 2122226302}
-  Ball: {fileID: 2122226301}
-  rampInterval: 50
+  rampInterval: 45
   Ramp: {fileID: 5238153340602728587, guid: 54133de14b133f448834665a8229aec9, type: 3}
   greenInterval: 40
   Obstacle: {fileID: 714847373510891336, guid: 5743331fa7751d841be319f2e52ba87f, type: 3}
