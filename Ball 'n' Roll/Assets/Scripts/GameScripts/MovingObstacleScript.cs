@@ -39,13 +39,13 @@ public class MovingObstacleScript : MonoBehaviour
             {
                 Obstacle.AddForce(-moveForce * Time.deltaTime, 0, 0);
             }
-            if (gameObject.transform.position.x <= -5.5)
+            if (gameObject.transform.position.x <= -5.5 && ScoreText.score > 49)
             {
 
                 Obstacle.velocity = new Vector3(1, 0, 0);
                 moveBool = true;
             }
-            if (gameObject.transform.position.x >= 3.3)
+            if (gameObject.transform.position.x >= 3.3 && ScoreText.score > 49)
             {
 
                 Obstacle.velocity = new Vector3(-1, 0, 0);
