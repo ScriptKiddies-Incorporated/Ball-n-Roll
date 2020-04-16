@@ -11,6 +11,7 @@ public class BehaviourMovement : MonoBehaviour
     public static bool pauseCondition = false;
     public int sidewaysForce;
     public static int forwardForce = 400;
+    public static bool planeCollisionChecker = true;
 
     void FixedUpdate()
     {
@@ -39,6 +40,18 @@ public class BehaviourMovement : MonoBehaviour
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
             }
+
+
+            print(Ball.position.y);
+            if (Ball.position.y <= 2.25f && Ball.position.y >= -1.43f)
+            {
+                planeCollisionChecker = true;
+            }
+            else
+            {
+                    planeCollisionChecker = false;
+            }
+            print(planeCollisionChecker);
         }
     }
     

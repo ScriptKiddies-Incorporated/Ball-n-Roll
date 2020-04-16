@@ -9,7 +9,7 @@ public class BoostScrpit : MonoBehaviour
 
     void Update()
     {
-        if(RampCollisionCheckScript.collCheck == false && ObstacleSpawnerScript.planeCollisionChecker == false)
+        if(RampCollisionCheckScript.collCheck == false &&  BehaviourMovement.planeCollisionChecker == false)
         {
             BehaviourMovement.forwardForce = 1750;
             PlaneCollisionScript.exCollCheck = false;
