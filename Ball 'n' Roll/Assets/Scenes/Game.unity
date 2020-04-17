@@ -466,7 +466,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 282840810}
   m_LocalRotation: {x: 0.009245165, y: 0.99470705, z: -0.09502711, w: -0.037977666}
-  m_LocalPosition: {x: -0.886, y: 0.165, z: 3.02}
+  m_LocalPosition: {x: -0.8, y: 0.1, z: 3}
   m_LocalScale: {x: 0.5610036, y: 0.72148925, z: -0.42405742}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1268,6 +1268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballPlayerNull2: {fileID: 2122226302}
+  BallPlayerObj: {fileID: 2122226301}
   rampInterval: 45
   Ramp: {fileID: 5238153340602728587, guid: 54133de14b133f448834665a8229aec9, type: 3}
   greenInterval: 40
@@ -2595,7 +2596,7 @@ PrefabInstance:
     - target: {fileID: 3028370181211965568, guid: 41634a8505ad6774f993fea9f9d30d7f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.015
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3028370181211965568, guid: 41634a8505ad6774f993fea9f9d30d7f,
         type: 3}

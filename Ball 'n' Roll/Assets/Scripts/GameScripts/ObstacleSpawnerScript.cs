@@ -6,6 +6,8 @@ using UnityEngine.Timeline;
 public class ObstacleSpawnerScript : MonoBehaviour
 {
     public GameObject ballPlayerNull2;
+    public Transform BallPlayerObj;
+    public static float zCoordinates;
    // public Transform Ball;
 
     public int rampInterval;
@@ -76,7 +78,7 @@ public class ObstacleSpawnerScript : MonoBehaviour
 
                 }
                 counter++;
-
+                zCoordinates = BallPlayerObj.position.z;
             }
 
         }

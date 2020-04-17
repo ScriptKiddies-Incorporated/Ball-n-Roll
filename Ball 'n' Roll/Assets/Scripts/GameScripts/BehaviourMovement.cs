@@ -42,7 +42,7 @@ public class BehaviourMovement : MonoBehaviour
             }
 
 
-            print(Ball.position.y);
+           // print(Ball.position.y);
             if (Ball.position.y <= 1.75f && Ball.position.y >= -1.43f)
             {
                 planeCollisionChecker = true;
@@ -51,7 +51,7 @@ public class BehaviourMovement : MonoBehaviour
             {
                     planeCollisionChecker = false;
             }
-            print(planeCollisionChecker);
+           // print(planeCollisionChecker);
         }
     }
     
