@@ -41,7 +41,7 @@ public class PlayerCollision : MonoBehaviour
 
 		particleSystemPos.position = ballPlayer.position + particleSystemVec;
 
-		if (collisionInfo.collider.name == "Obstacle" || collisionInfo.collider.name == "Obstacle(Clone)")
+		if (collisionInfo.collider.name == "Obstacle" || collisionInfo.collider.name == "Obstacle(Clone)" || collisionInfo.collider.name == "PrimaryObstacle")
 		{
 			ObstacleSpawnerScript.timeController = false;
 			redSoundCondition = true;

@@ -10,7 +10,7 @@ public class BehaviourMovement : MonoBehaviour
     public Rigidbody Ball;
     public static bool pauseCondition = false;
     public int sidewaysForce;
-    public static int forwardForce = 400;
+    public static float forwardForce = 400f;
     public static bool planeCollisionChecker = true;
 
     void FixedUpdate()

@@ -12,7 +12,6 @@ public class ObstacleDestroyScript : MonoBehaviour
         if(ObstacleObj.position.z > ObstacleSpawnerScript.zCoordinates + 5)
         {
             Destroy(gameObject);
-            print("go6o");
         }
     }
 

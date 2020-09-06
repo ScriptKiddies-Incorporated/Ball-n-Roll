@@ -17,6 +17,7 @@ public class PlaneCollisionScript : MonoBehaviour
                 BehaviourMovement.forwardForce = 400;
                 exCollCheck = true;
                RampCollisionCheckScript.collCheck = true;
+                BoostScrpit.speedControll = 2f;
             }
         }
 
