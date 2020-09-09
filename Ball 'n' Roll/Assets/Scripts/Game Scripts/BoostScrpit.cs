@@ -6,7 +6,7 @@ public class BoostScrpit : MonoBehaviour
 {
 
     public Transform ballObject;
-    public static float speedControll = 1.5f;
+    public static float speedControl = 1.5f;
 
     void Update()
     {
@@ -15,17 +15,17 @@ public class BoostScrpit : MonoBehaviour
             // BehaviourMovement.forwardForce = 1750;
             if (BehaviourMovement.forwardForce <= 1000f)
             {
-                BehaviourMovement.forwardForce = BehaviourMovement.forwardForce + speedControll;
+                BehaviourMovement.forwardForce = BehaviourMovement.forwardForce + speedControl;
             }
                 PlaneCollisionScript.exCollCheck = false;
-            if (speedControll > 0.5f)
+            if (speedControl > 0.5f)
             {
-                speedControll = speedControll - 0.0005f;
+                speedControl = speedControl - 0.0005f;
             }
         }
         else
         {
-            speedControll = 1.5f;
+            speedControl = 1.5f;
         }
 
     }

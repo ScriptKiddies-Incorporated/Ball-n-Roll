@@ -9,7 +9,7 @@ public class PlayButtonScript : MonoBehaviour
 	public static AsyncOperation skinLoader;
 	public static AsyncOperation gameLoader;
 	public GameObject StartMusic;
-	bool isFirstTime = true;
+	
 	private void Awake()
 	{
 		DontDestroyOnLoad(StartMusic);
