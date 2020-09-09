@@ -27,7 +27,7 @@ public class PlayButtonScript : MonoBehaviour
 	}
 	public void OnClickButton()
 	{
-		MusicScript.shouldMainMusicBeStopped = true;
+		MusicScript.shouldMainMenuMusicBeStopped = true;
 		audioLoader.allowSceneActivation = true;
     }
 

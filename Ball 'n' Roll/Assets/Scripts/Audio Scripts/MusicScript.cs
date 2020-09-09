@@ -7,6 +7,6 @@ public class MusicScript : MonoBehaviour
 	public GameObject GameMusic;
 	public GameObject StartMusic;
 	public static bool isStartMusicFirstTime = true;
-	public static bool shouldMainMusicBeStopped = false;
+	public static bool shouldMainMenuMusicBeStopped = false;
 	public static bool isSettingsFirstTime = true;
 }

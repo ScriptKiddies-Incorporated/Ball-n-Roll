@@ -22,6 +22,11 @@ public class MainMenuButtonScript : MonoBehaviour
         BehaviourMovement.forwardForce = 400;
         BoostScrpit.speedControl = 1.5f;
 
-        SceneManager.LoadScene("MainMenu");
+		LoadGameScene.StopGameMusic();
+		MusicScript.isStartMusicFirstTime = true;
+		MusicScript.shouldMainMenuMusicBeStopped = false; // exp
+
+
+		SceneManager.LoadScene("MainMenu");
     }
 }

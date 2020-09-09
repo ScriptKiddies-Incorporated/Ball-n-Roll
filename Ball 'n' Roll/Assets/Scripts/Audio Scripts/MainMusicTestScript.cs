@@ -26,7 +26,7 @@ public class MainMusicTestScript : MonoBehaviour
 	// Update is called once per frame
 	void Update()
     {
-		if (MusicScript.shouldMainMusicBeStopped)
+		if (MusicScript.shouldMainMenuMusicBeStopped)
 		{
 			Destroy(transform.gameObject);
 			this.GetComponent<AudioSource>().Stop();
